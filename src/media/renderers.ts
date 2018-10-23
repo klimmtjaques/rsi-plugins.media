@@ -59,7 +59,7 @@ export class Renderers extends Resource {
     }
     if (difference.hasOwnProperty("repeat")) {
       if (-1 !== ["off", "repeatone", "repeatall"].indexOf(difference.repeat)) {
-        this.netfluxRenderer.setShuffle(difference.repeat);
+        this.netfluxRenderer.setRepeat(difference.repeat);
       }
     }
     if (difference.hasOwnProperty("currentMediaItem")) {
